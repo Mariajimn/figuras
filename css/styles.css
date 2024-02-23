@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+section#inicio{
+    width: 100%;
+    min-height: 100vh;
+    background: url("../img/and-machines-vqTWfa4DjEk-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+
+#inicio.inicio2{
+    background: url('../img/milad-fakurian-PGdW_bHDbpI-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    
+}
+
+.fila{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+    min-height: 70vh;
+    padding-top: 120px;
+}
+
+.col-izq,
+.col-der{
+    width: 50%;
+    text-align: center;
+    border: 1px solid #111010;
+    padding: 40px;
+    min-height: 600px;
+    border-radius: 30px;
+}
+
+h2{
+    font-size: 40px;
+    color: #151414;
+    padding: 20px;
+    border-bottom: 1px solid #100f0f;
+}
+
+button{
+    background: rgb(14, 13, 13);
+    color: #d69c4b;
+    padding: 10px 30px;
+    margin: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+button:hover{
+    transform: scale(0.8);
+    background: rgb(223, 211, 211);
+    color: #090909;
+    border-radius: 25px;
+}
+
+#figura{
+    width: 210px;
+    height: 210px;
+    background: #c89952;
+    margin: 100px auto;
+    transition: 1s;
+}
+
+#figura.circulo{
+    transform: rotate(360deg) scale(1.5);
+    border-radius: 50%;
+    background: rgb(52, 84, 78);
+}
+
+#figura.rectangulo{
+    height: 300px;
+    background: #704063;
+}
+
+#figura.degradado{
+    background: linear-gradient(70deg, rgb(132, 225, 124), rgb(103, 148, 30));
+}
+
+#figura.gif{
+    width: 300px;
+    height: 250px; 
+    background: url(../img/moon-10125_256.gif);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+
+#figura.luna{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    box-shadow: 50px 25px 0 #0f183cc0;
+    background: transparent;
+} 
+
+
+#figura.estrella {
+    margin-top: 210px;
+    position: relative;
+    display: block;
+    color: rgb(154, 185, 32);
+    width: 0px;
+    height: 0px;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid rgb(154, 185, 32);
+    border-left: 100px solid transparent;
+    transform: rotate(35deg);
+    background: transparent; 
+    
+}
+#figura.estrella:before {
+    border-bottom: 80px solid rgb(154, 185, 32);
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -45px;
+    left: -65px;
+    display: block;
+    content: '';
+    transform: rotate(-35deg);
+}
+#figura.estrella:after {
+    position: absolute;
+    display: block;
+    color: rgb(154, 185, 32);
+    top: 3px;
+    left: -105px;
+    width: 0px;
+    height: 0px;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid rgb(154, 185, 32);
+    border-left: 100px solid transparent;
+    transform: rotate(-70deg);
+    content: '';
+}
+
+#figura.triangulo{
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 200px solid rgb(106, 146, 194);
+    background: transparent;
+}
+
+#figura.left{
+    transform: translateX(-250px);
+    background: #11ae74;
+}
+
+#figura.right{
+    transform: translateX(250px);
+    background: #8d6998;
+}
+
+#figura.topp{
+    transform: translateY(150px);
+    background: #82456b;
+    
+}
+
+#figura.bottom{
+    transform: translateY(-80px);
+    background: #d1af8d;
+}
+
+#figura.diagonal{
+    background: rgb(58, 49, 9);
+    transform: rotate(45deg);
+}
+
+#panel-lateral{
+    width: 400px;
+    height: 100%;
+    position: absolute;
+    left: -450px;
+    top: 0;
+    z-index: 9;
+    background: #020202;
+    transition: 1s;
+}
+
+#panel-lateral.active{
+    left: 0;
+}
+
+#panel-lateral h2{
+    color: black;
+    font-size: 40px;
+    padding: 40px 30px;
+
+}
+#panel-lateral ul{
+   width: 80%;
+   margin: 20px auto;
+    text-align: center;
+    
+}
+
+#panel-lateral ul a{
+    display: block;
+    padding: 20px;
+    background:#d1af8d;
+    color: #000;
+    margin: 20px 0;
+    text-decoration: none;
+    font-size: 20px;
+   
+ }
+
+ #panel-lateral ul a:hover{
+    border-radius: 20px;
+    
+}
+
+#panel-superior{
+    width: 100%;
+    height: 55%;
+    position: absolute;
+    top: -500px;
+    left: 0;
+    z-index: 10;
+    background: rgb(13, 13, 13);
+    transition: 1s;
+}
+
+#panel-superior.active{
+    top: 0;
+}
+
+#panel-superior h2{
+    text-align: center;
+}
+
+#panel-superior iframe{
+    position:relative;
+    left: 35%;
+    top: 15px;
+}
+
+#figura.ingresar{
+    background: #988e4f;
+}
